@@ -1,0 +1,567 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+.allbackground{
+background-color: #f5f5f5;
+}
+/* dropdown */
+.dropbtn {
+    background-color: white;
+    color:#666 ;
+    padding: 16px;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+  }
+  .dropbtn:hover{
+    background-color: white;
+    text-decoration: line;
+  }
+  
+  /* The container <div> - needed to position the dropdown content */
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    /* background-color: #f9f9f9; */
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  /* Change color of dropdown links on hover */
+  .dropdown-content a:hover {background-color: #f1f1f1}
+  
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {
+    display: block;
+    background-color: white;
+  
+  }
+  
+  /* Change the background color of the dropdown button when the dropdown content is shown */
+  .dropdown:hover .dropbtn {
+    text-decoration: line;
+  }
+.icons{
+    
+    width: 20px;
+    height: 20px;
+}
+/* .active{
+    background-color: #ccc;
+    /* border-radius: 20px; */
+    /* padding: 10px 20px 10px 20px; */
+    /* text-decoration: line-through         ; */
+/* } */ */
+html,body{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.left{
+    position: relative;
+    left: -131px;
+    display: flex;
+}
+.navlogo{
+    
+    width: 118px;
+    height: 63px;
+}
+.flex ul li{
+
+    margin-right: 15px;
+    list-style: none;
+    padding: 0px 12px;
+}
+header{
+    z-index: 3;
+position: sticky;
+top: 0;
+height: 68px;
+background-color: white;
+box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+.link{
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+    color: #666;
+    display: inline-block;
+}
+
+.link:hover{
+    border-radius: 20px;
+   
+    text-decoration:underline;
+}
+nav ul li {
+    color: #666;
+}
+.right{
+    margin-left:-123px ;
+}
+input{
+    background: #f7f8fd;
+    padding-left: 18px;
+    width: 410px;
+    height: 34px;
+   border: none;
+}
+.container{
+    padding: 0 10vw;
+    margin: 1px 0px;
+}
+.section1{
+    background-color: #f2f2f2;
+   
+}
+.homeimg{
+    border-radius: 5px;
+    width: 1519px;
+}
+.navlogo:hover{
+    cursor: pointer;
+}
+.itemimg{
+    width: 13vw;
+    margin-right:  5px; ;
+}
+footer{
+    padding: 23px;
+    text-align: center;
+    box-shadow: rgb(0 0 0 / 24%) 0px 3px 8px;
+  }
+  /* ..............................slider........................... */
+  .slider{
+display: flex;
+justify-content: center;
+  }
+  .sliderimg{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 30px;
+    height: 500px;
+    width: 800px;
+  }
+  /* ......................................Filter........................... */
+  .container-flt{
+    z-index: 10;
+    position: sticky;
+    top: 117px;
+    left: 0;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    width: 250px;
+    height: 300px;
+    margin-left: 20px;
+    border-radius: 10px;
+  }
+  .container-flt h1{
+   text-align: center;
+  }
+  input[type=radio]{
+   margin-left: 40px;
+    
+    width: 40px;
+  }
+  .container-flt button{
+     border-radius: 5px;
+     border: none;
+     width: 80px;
+     height: 40px;
+     background-color: #e63900;
+     padding: 5px 5px 5px 5px;
+     margin-left: 80px;
+     margin-top: 10px;
+  }
+  /* ..................................card.................................. */
+  .card {
+    z-index: 1;
+    background-color: #fff;
+   width: 300px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 4px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin: 4px;
+}
+.card img{
+    width: 250px;
+    height: 280px;
+}
+.card h2{
+    height: 60px;
+    font-size: 20px;
+}
+
+.card button{
+    padding: 10px 20px;
+    height: 50px;
+    width: 150px;
+    padding: 10px 20px;
+    font-size: 15px;
+    background-color: #ff4500;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.card span{
+    font-size: 20px;
+    margin-bottom:15px ;
+}
+.addcart{
+    visibility: hidden;
+    height: 50px;
+    width: 150px;
+}
+
+/* ...........................Products display.............................. */
+.product{
+    margin-top: 40px;
+    justify-content: space-around;
+    display: flex;
+   
+}
+/* .filter{
+    width: 250px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding-right: 4px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      background-color: #fff;
+    margin: 4px;
+    display: flex;
+    flex-direction: column;
+    margin-left:20px ;
+    margin-right:20px ;
+} */
+.display{
+    
+    width: 80%;
+    display: flex;
+    height: auto;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.display:hover{
+    cursor: pointer;
+}
+.display button{
+    position: relative;
+    bottom: 10px;
+}
+/* / /..........................detail page.................................... */
+main {
+    padding: 20px;
+}
+
+.product-details {
+    display: flex;
+}
+
+.product-image img {
+    max-width: 300px;
+    height: auto;
+}
+
+.product-info {
+    margin-left: 20px;
+}
+
+.product-info h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.product-price {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.product-description {
+    margin-bottom: 20px;
+}
+
+.add-to-cart {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+/* ////////////////////.........................detail page................................. */
+/* Reset default margin and padding */
+.container1 {
+    max-width: 960px;
+    height: 500px;
+    margin: 20px auto;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    display: flex;
+    /* flex-direction: column ;  */
+}
+
+.product-image {
+    flex: 1;
+    padding: 10px;
+}
+
+.product-image img {
+    /* border-radius: 0px; */
+    width: 400px;
+    height: 300px;
+    /* object-fit: cover; */
+    border: 1px solid #ddd;
+    border-radius: 20px;
+}
+
+.product-details {
+
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.product-details h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.product-details .price {
+    font-size: 18px;
+    font-weight: bold;
+    color: #ff4500;
+    margin-bottom: 10px;
+}
+
+.product-details .description {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.product-details .buy-now button {
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #ff4500;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.product-details .buy-now button:hover {
+    background-color: #e63900;
+}
+/* .............................................Wishlist................................... */
+.wishlist{
+    flex-direction: column;
+}
+.heart{
+    
+    margin-right: 10px;
+    width: 40px;
+    height: 40px;
+}
+.heart-clr-red{
+    margin-right: 10px;
+    width: 40px;
+    height: 40px;
+    color:red ;
+}
+.heart-clr-white{
+    margin-right: 10px;
+    width: 40px;
+    height: 40px;
+    background-color:white;
+}
+.wish h3{
+    margin-left: 20px;
+}
+.wish{
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    margin-top: 40px;
+    margin-bottom: 10px;
+    margin-left: 30px;
+    width: 800px;
+    height: 250px;
+}
+.wish button{
+    margin-top: 20px;
+    margin-left:10px ;
+    background-color: #e63900;
+    width: 80px;
+    height: 40px;
+    border: none;
+    border-radius: 16px;
+}
+.wish img{
+    height: 200px;
+    width: 150px;
+}
+/* ...................................................login............................................ */
+.form-group{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.login-container button{
+    height: 40px;
+    width: 80px;
+    border-radius: 10px;
+    border: none;
+    background-color: #e63900;
+}
+/* ......................................cart............................................. */
+.cart-ch{
+    width: 600px;
+    height: 260px;
+}
+.cart-ch button{
+ height: 40px;
+ border-radius: 6px;
+}
+.cart img{
+
+height: 200px;
+width :200px
+}
+.cart-con{
+    width: 400px;
+}
+.checkout{
+   
+    margin-top: 20px;
+    margin-left:10px ;
+    background-color: #e63900;
+    width: 100px;
+    height: 40px;
+    border: none;
+    border-radius: 6px;
+}
+.fixed{
+    padding: 10px 19px 10px 10px;
+    /* margin-left: ; */
+    height: 230px;
+    width: 550px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    position: fixed;
+    right:100px ;
+    top: 100px;
+}
+.empty{
+    width: 1000px;
+    height: 300px;
+}
+.empty button:hover{
+  cursor: pointer;
+}
+/*             ..............................payment............................... */
+.payment {
+
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+  }
+  .payment-form {
+    margin-bottom: 20px;
+  }
+  .form-group {
+    margin-bottom: 15px;
+  }
+  label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  .form-group input, select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    box-sizing: border-box;
+  }
+ .payment button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+  button:hover {
+    background-color: #0056b3;
+  } 
+  .icons-exit{
+    float: right;
+   height: 40px;
+   width: 40px;
+  }
+  .icons-tick{
+    height: 100px;
+    width: 100px;
+  }
+  .popup-wrapper{
+   position: absolute;
+   top: 0;
+    background-color: rgb(189, 189, 189,0.9);
+    height: 100vh;
+    width: 100%;
+  }
+.popup-container{
+    
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    height: 300px;
+    width: 350px;
+    border-radius: 5px;
+    background-color: whitesmoke;
+}
+  /* ....................................adddpopup........................................... */
+  .addpopup{
+
+    position: fixed;
+    top: 57px;
+    padding: 10px 10px 10px 10px;
+    background-color: #e6cccc;
+    border-radius: 6px;
+  }
+  /* register */
+  .container-reg{
+    text-align: center;
+  }
+  .container-reg-input{
+    width: 360px;
+    height: 50px;
+    margin-top: 10px;
+  }
+  .container-reg-button{
+    position: relative;
+    left: 45%;
+    margin-top: 20px;
+    width: 150px;
+    height: 40px;
+    background-color: #e63900;
+    border: none;
+    border-radius: 5px;
+  }
+
