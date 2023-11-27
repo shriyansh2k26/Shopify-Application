@@ -1,15 +1,14 @@
 const express=require('express');
 const app =express();
 const port=7879;
-// const order=require('./modals/orderModal')
-// const dotenv=require('dotenv')
+
 const mongoose=require('mongoose')
 const cors=require('cors')
 const User=require('../server/modals/userSchema')
 const bcrypt=require('bcryptjs')
 const jwt=require('jsonwebtoken')
-const {braintreeControllerToken}=require('../server/controller/gatewayController')
-const {braintreePayment}=require('../server/controller/gatewayController');
+
+
 const orderRoutes = require('./orderRoutes/order');
 app.use(cors());
 
@@ -17,14 +16,11 @@ app.use(express.json());
 mongoose.connect('mongodb://0.0.0.0:27017/mern-authen').then(()=>{
     console.log("connected")
 })
-// app.use('/',(req,res)=>{
-//     res.send("hello")
-// })
+
 //  ..........................................REGISTER ROUTE.......................................
-// const hashPassword=await bcrypt.hash(password,11);
-// const hashCPassword=await bcrypt.hash(cpassword,11);
+
 app.post('/auth/register',async(req,res)=>{
-    // console.log(req.body);
+
     
     try{
         const {name,email,password,cpassword}=req.body;
