@@ -16,7 +16,7 @@ const navigate=useNavigate();
 const registerUser=async(event)=> {
 		event.preventDefault()
 
-		const response = await fetch('https://shopifyserver.onrender.com/login', {
+		const response = await fetch('https://shopifyserver.onrender.com/auth/login', {
 			method: 'POST',
 			body: JSON.stringify({
 				email,

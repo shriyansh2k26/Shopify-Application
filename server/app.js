@@ -23,7 +23,7 @@ mongoose.connect('mongodb://0.0.0.0:27017/mern-authen').then(()=>{
 //  ..........................................REGISTER ROUTE.......................................
 // const hashPassword=await bcrypt.hash(password,11);
 // const hashCPassword=await bcrypt.hash(cpassword,11);
-app.post('/register',async(req,res)=>{
+app.post('/auth/register',async(req,res)=>{
     // console.log(req.body);
     
     try{
@@ -73,7 +73,7 @@ app.post('/register',async(req,res)=>{
     }
 })
 // ......................................LOGIN ROUTE.................................
-app.post('/login', async(req,res)=>{
+app.post('/auth/login', async(req,res)=>{
     // res.send({status:'ok'})
     try {
     const {email,password}=req.body;
