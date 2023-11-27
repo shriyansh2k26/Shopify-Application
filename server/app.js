@@ -89,7 +89,8 @@ app.post('/auth/login', async(req,res)=>{
         else{
         // create token
         const token=   jwt.sign({_id:user.id},'secee123',{expiresIn:'7d'})
-       if(token){ res.send({
+       if(token){ 
+        return res.send({
             success:true,
             message:'Logged in succesfully',
             email,
