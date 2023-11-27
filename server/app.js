@@ -114,6 +114,9 @@ app.post('/login', async(req,res)=>{
     }
 })
 app.use('/',orderRoutes)
+app.use('/',(req,res)=>{
+    res.send("heloo")
+})
 // payment ......................
 // token
 // app.get('/braintree/token',braintreeControllerToken)
