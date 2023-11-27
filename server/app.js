@@ -17,7 +17,9 @@ app.use(express.json());
 mongoose.connect('mongodb://0.0.0.0:27017/mern-authen').then(()=>{
     console.log("connected")
 })
-
+app.use('/',(req,res)=>{
+    res.send("hello")
+})
 //  ..........................................REGISTER ROUTE.......................................
 // const hashPassword=await bcrypt.hash(password,11);
 // const hashCPassword=await bcrypt.hash(cpassword,11);
