@@ -94,7 +94,7 @@ const registerUser=async(event)=> {
 				<br />
 				<input className='pointer container-reg-button flex justify-center' type="submit" value="Login" />
 			</form>
-			<h4><Link to='/register'>Don't have an account ? Register</Link></h4>
+			<h4><Link to='/auth/register'>Don't have an account ? Register</Link></h4>
 		</div>
 <ToastContainer />
         </div>

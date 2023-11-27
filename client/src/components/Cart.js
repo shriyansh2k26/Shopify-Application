@@ -27,7 +27,7 @@ export default function Cart() {
   const navigateTologin = useNavigate();
   const navigateToPayment = () => { navigate('/payment') }
   const navigateToHome = () => { navigateTohome('/') }
-  const navigateTo = () => { navigateTologin('/login') }
+  const navigateTo = () => { navigateTologin('/auth/login') }
   // handle checkout
   const orders = {
     date: date,

@@ -31,7 +31,7 @@ const registerUser=async(event)=> {
 		
         if(data.success){
             const navigateTologin=()=>{
-                navigate('/login')
+                navigate('/auth/login')
 				
             }
 			// console.log(data.message)
@@ -86,7 +86,7 @@ const registerUser=async(event)=> {
 				<br />
 				<input className='pointer container-reg-button flex justify-center' type="submit" value="Register" />
 			</form>
-			<h4><Link to='/login'> Have an account ? Login</Link></h4>
+			<h4><Link to='/auth/login'> Have an account ? Login</Link></h4>
 		</div>
 <ToastContainer />
         </div>

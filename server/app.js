@@ -110,7 +110,7 @@ app.post('/auth/login', async(req,res)=>{
     catch (error) {
         res.status(500).send({
             success:false,
-            message:'error in login'
+            message:message.error
             ,error
         })
     }

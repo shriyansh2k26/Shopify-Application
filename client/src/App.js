@@ -29,12 +29,12 @@ function App() {
       <Route path='/women' element={<Women/>}/>
       <Route path='/jwellery' element={<Jwellery/>}/>
       <Route path='/product/:idP' element={<ProductDetail/>}/>
-       <Route path='/login' element={<Login/>}/>
+       <Route path='/auth/login' element={<Login/>}/>
        <Route path='/profile' element={<Profile/>}/>
       <Route path='/cart' element={<Cart/>}/>
       <Route path='/wishlist' element={<Wishlist/>}/>
       <Route path='/payment' element={<PaymentPage/>}/>
-      <Route path='/register' element={<Register/>}/>
+      <Route path='/auth/register' element={<Register/>}/>
     </Routes>
     <ToastContainer/>
     </BrowserRouter>

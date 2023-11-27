@@ -57,7 +57,7 @@ export default function Navbar() {
                         </NavLink></div>
                         {
                             !auth.token ? <>
-                                <div class="profile mx-2"><NavLink className="link flex item-center" to="/login"><CgProfile className="icons" />Login</NavLink></div>
+                                <div class="profile mx-2"><NavLink className="link flex item-center" to="/auth/login"><CgProfile className="icons" />Login</NavLink></div>
                             </>
                                 :
                                 <>
