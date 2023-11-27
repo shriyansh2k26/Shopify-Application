@@ -6,7 +6,7 @@ export default function Profile() {
   const [order, setOrder] = useState([])
   useEffect(() => {
     const fetch_order = async () => {
-      const response = await fetch('http://localhost:8000/getorder', {
+      const response = await fetch('https://shopifyserver.onrender.com/getorder', {
         method: "GET",
         headers: {
           'Content-Type': 'application/json'
